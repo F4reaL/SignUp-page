@@ -1,0 +1,18 @@
+@import 'variables';
+input {
+    height: 30px;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+input:focus {
+    border-bottom: 1px solid $main-color;
+}
+
+.invalid input {
+    border-bottom: 1px solid red;
+}

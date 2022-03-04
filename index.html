@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Dancing+Script&family=Red+Hat+Display:wght@700&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/button.css"> -->
+</head>
+
+<body>
+    <form method="post" action="" class="signUp-form" id="signUp-form">
+        <div class="logo">
+            <img src="assets/img/Logo.png" alt="">
+        </div>
+
+        <div class="tell-story">
+            <p id="text">
+
+            </p>
+            <div class="author">-Holmes-</div>
+        </div>
+        <div class="white-area">
+            <div class="languages">
+                <p>English</p>
+            </div>
+            <div class="title">Create Account</div>
+            <div class="signUpWith">
+                <div class="signUpWith-G">
+                    <span>Sign Up with Google</span></div>
+                <div class="signUpwith-F">
+                    <span>Sign Up with FaceBook</span></div>
+            </div>
+            <div class="or">- OR -</div>
+            <div class="fill-area">
+                <div class="form-field">
+                    <input type="text" class="form-input" placeholder="FullName" id="fullname" name="fullname">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-field">
+                    <!-- <label class="form-label">Email</label> -->
+                    <input type="text" class="form-input" placeholder="Email" id="email" name="email">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-field">
+                    <!-- <label class="form-label">PassWord</label> -->
+                    <input type="password" class="form-input" placeholder="PassWord" id="password" name="password">
+                    <img src="./assets/img/Password icon.png" alt="">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-field">
+                    <!-- <label class="form-label">Confirm PassWord</label> -->
+                    <input type="password" class="form-input" placeholder="Confirm PassWord" id="password-confirm" name="password-confirm">
+                    <img src="./assets/img/Password icon.png" alt="">
+                    <div class="form-message"></div>
+                </div>
+
+
+            </div>
+            <div class="btn">
+                <button>Create Account</button>
+            </div>
+        </div>
+        <div class="guyWithBook"></div>
+    </form>
+
+    <script src="./js/validator.js"></script>
+    <script>
+        Validator({
+            form: '#signUp-form',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname', 'họ tên'),
+                Validator.isRequired('#email', 'email'),
+                Validator.isEmail('#email'),
+                Validator.isPassword('#password', 6),
+                Validator.isConfirm('#password-confirm', function() {
+                    return document.querySelector('#signUp-form #password').value;
+                })
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        });
+    </script>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

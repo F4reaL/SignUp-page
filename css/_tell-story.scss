@@ -1,0 +1,50 @@
+.signUp-form .tell-story {
+    position: absolute;
+    white-space: normal;
+    width: 35%;
+    // height: 500px;
+    left: 20px;
+    top: 90px;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    /* animation: typewriter 4s steps(44) 1s normal both, blinkTextCursor 500ms steps(44) infinite normal; */
+}
+
+.signUp-form .tell-story p {
+    width: 75%;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.signUp-form .tell-story .char {
+    font-size: 30px;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+    text-align: center;
+}
+
+.signUp-form .tell-story:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+    cursor: pointer;
+}
+
+.tell-story .author {
+    text-align: center;
+}
+
+
+/* Animation for story */
+
+@keyframes an {
+    from {
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to {
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}

@@ -1,0 +1,17 @@
+.form-field {
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.form-field img {
+    position: absolute;
+    transform: translateX(-100%);
+}
+
+.form-field.invalid .form-message {
+    color: red;
+    position: absolute;
+    top: 10px;
+    left: 60%;
+}

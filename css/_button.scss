@@ -1,0 +1,28 @@
+@import 'variables';
+button {
+    outline: none;
+    background-color: $main-color;
+    border: 3px solid $main-color;
+    color: white;
+    height: 40px;
+    min-width: 450px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.white-area .btn button {
+    position: fixed;
+    bottom: 40px;
+    left: 40%;
+    /* transform: translateX(-50%); */
+}
+
+button:hover {
+    background-color: #73d6ec;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(32, 230, 236);
+}

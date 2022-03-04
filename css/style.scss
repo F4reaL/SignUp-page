@@ -1,0 +1,151 @@
+@import 'variables';
+@import 'button';
+@import 'input';
+@import 'tell-story';
+@import 'form-field';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $main-color;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.signUp-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 80vh;
+    background: $main-color;
+    border: 6px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: -8px -6px 25px rgba(84, 84, 84, 0.25), 8px 6px 25px rgba(84, 84, 84, 0.36);
+    border-radius: 30px;
+    /* padding: 10px; */
+}
+
+.signUp-form .logo img {
+    /* background-image: url('../assets/img/Logo.png'); */
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.signUp-form .guyWithBook {
+    height: 350px;
+    width: 350px;
+    background-image: url('../assets/img/Saly-16.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50px;
+    bottom: -112px;
+}
+
+.signUp-form .white-area {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 30%;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+}
+
+.languages p {
+    float: right;
+    margin-right: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    color: #C1C1C1;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    text-shadow: 2px 2px 5px rgba(84, 84, 84, 0.36);
+}
+
+.languages p:hover {
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    text-shadow: 1px 3px 0px #c1c1c1;
+}
+
+.signUpWith {
+    display: flex;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpWith div {
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.signUpWith .signUpWith-G {
+    background-image: url('../assets/img/google.png');
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 15px;
+    padding-left: 55px;
+}
+
+.signUpWith .signUpwith-F {
+    background-image: url('../assets/img/icons8-facebook-48.png');
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 15px;
+    padding-left: 55px;
+}
+
+.signUpWith-G:hover,
+.signUpwith-F:hover {
+    cursor: pointer;
+    background-color: rgb(230, 244, 247);
+}
+
+.white-area .or {
+    position: absolute;
+    color: #C1C1C1;
+    top: 160px;
+    left: 45%;
+    user-select: none;
+}
+
+.white-area .fill-area {
+    position: absolute;
+    width: 80%;
+    height: 45%;
+    /* border: 1px solid red; */
+    top: 180px;
+    left: 10%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        background-color: red;
+    }
+}
