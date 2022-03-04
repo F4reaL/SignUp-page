@@ -54,5 +54,5 @@ var randomShow = setInterval(function() {
     showStory(stories);
     setTimeout(function() {
         clearInterval(randomShow);
-    }, 5000)
-}, 1000);
+    }, 50000)
+}, 10000);
