@@ -9,6 +9,10 @@
     transform: translateX(-100%);
 }
 
+.form-field img:hover {
+    cursor: pointer;
+}
+
 .form-field.invalid .form-message {
     color: red;
     position: absolute;
