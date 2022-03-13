@@ -99,7 +99,7 @@ input:focus {
 
 .form-field img {
   position: absolute;
-  transform: translateX(-99%);
+  transform: translateX(-100%);
 }
 
 .form-field img:hover {
